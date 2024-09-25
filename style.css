@@ -1,0 +1,114 @@
+/* styles.css */
+
+/* CSS Variables */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #343a40;
+  --background-color: #f4f4f9;
+  --card-background-color: #ffffff;
+  --text-color: #666;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+.header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 40px 0;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 5px;
+  background-color: white;
+}
+
+/* Navbar Styles */
+.navbar-nav .nav-link {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Post Styles */
+.card {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  background-color: var(--card-background-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Sidebar Styles */
+.card-body ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.card-body ul li {
+  margin-bottom: 10px;
+}
+
+.card-body ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.card-body ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 20px;
+}
+
+/* Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
